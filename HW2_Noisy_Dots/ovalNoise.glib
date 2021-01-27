@@ -1,16 +1,26 @@
 ##OpenGL GLIB
 
 Perspective 90
-LookAt 0 0 2  0 0 0  0 1 0
+LookAt 0 2 4  0 2 0  0 1 0
 
 
-Vertex   pattern.vert
-Fragment pattern.frag
-Program  Pattern				\
-	uAd <.001 .1 .5>		\
-	uBd <.001 .1 .5>		\
-	uTol <0. 0. 1.>			\
-	uColor {1. .5 0.}
+Vertex   ovalNoise.vert
+Fragment ovalNoise.frag
+Program  OvalNoise				\
+	uAd <.001 .1 .5>			\
+	uBd <.001 .1 .5>			\
+	uNoiseAmp <-1. 0. 1.>  		\
+	uNoiseFreq <0. 1. 10.>		\
+	uAlpha <0. 1. 1.> 			\
+	uTol <0. 0. 1.>				\
+	uColor {1. .6 .51}			\
+	uBackground {.69 1. .8}
 
-Color 1. 0 0
-Sphere 1 50 50
+Obj CatL.obj 
+
+# uAd: Ellipse diameter for s
+# uBd: Amplitude of the noise function, i.e., it multiplies the noise value.
+# uNoiseFreq: Frequency of the noise function, i.e., it multiplies what goes into the noise function.
+# uTol: Width of the blend between ellipse and non-ellipse areas
+# uAlpha: Alpha value for the areas outside the ellipses
+# uColor: Select color of ellipses 

@@ -13,7 +13,7 @@ main( )
     vColor = gl_Color;
 	vST = gl_MultiTexCoord0.st;
 
-	vec3 tnorm      = normalize( gl_NormalMatrix * gl_Normal );
+	vec3 tnorm      = normalize( gl_NormalMatrix * gl_Normal );			// transformed normal
 	vec3 ECposition = vec3( gl_ModelViewMatrix * gl_Vertex );
 	vLightIntensity  = abs( dot( normalize(LIGHTPOS - ECposition), tnorm ) );
 
