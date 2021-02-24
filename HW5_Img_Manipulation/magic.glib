@@ -1,16 +1,21 @@
 ##OpenGL GLIB
-
-Perspective 90
+Ortho -5. 5.   -5. 5.
 LookAt 0 0 2  0 0 0  0 1 0
 
+Texture2D 5 frog.bmp
 
-Vertex   pattern.vert
-Fragment pattern.frag
-Program  Pattern				\
-	uAd <.001 .1 .5>		\
-	uBd <.001 .1 .5>		\
-	uTol <0. 0. 1.>			\
-	uColor {1. .5 0.}
+Vertex   magic.vert
+Fragment magic.frag
+Program  Magic							\
+	sLoc	 <0. .5 1.>					\
+	tLoc	 <0. .5 1.>					\
+	width      <0.01 .1 .5>				\
+	height      <0.01 .1 .5>			\
+	Circle <false>						\
+	radius		<0.01 .1 .5>			\
+	uMagFactor <.1 1. 25.>				\
+	uRotAngle <-3.14159 0. 3.14159>		\
+	uSharpFactor <0. 1. 5.>				\
+	uImageUnit  5
 
-Color 1. 0 0
-Sphere 1 50 50
+QuadXY .2 5.
