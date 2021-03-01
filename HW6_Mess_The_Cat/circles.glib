@@ -1,0 +1,15 @@
+##OpenGL GLIB
+
+Ortho -1. 1. -1. 1.
+LookAt 0 0 1 0 0 0 0 1 0
+
+Vertex circles.vert
+Fragment circles.frag
+Program Circles             \
+    uScreen <true>          \
+    uUseColor <false>       \
+    uColor {0. 0. 0. 1.}    \
+    uMod <1 2 8>            \
+    uSide <.1 1. 3.>
+
+Obj CatL.obj
