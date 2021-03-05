@@ -1,0 +1,11 @@
+
+ERROR: 0:46: 'uModelCoords' : undeclared identifier 
+ERROR: 0:46: '' : boolean expression expected 
+ERROR: 0:58: 'uLightX' : undeclared identifier 
+ERROR: 0:58: 'uLightY' : undeclared identifier 
+ERROR: 0:58: 'uLightZ' : undeclared identifier 
+ERROR: 0:67: 'uModelCoords' : undeclared identifier 
+ERROR: 0:67: '!' : wrong operand type no operation '!' exists that takes an operand of type float (or there is no acceptable conversion)
+ERROR: 0:67: '' : boolean expression expected 
+
+
